@@ -1,0 +1,71 @@
+.contact {
+    background: url('../images/contact-us.jpg') center/cover no-repeat;
+    width: 100%;
+    height: 472px;
+    padding: 0 40px;
+}
+
+.contact__container {
+    max-width: 1464px;
+    width: 100%;
+    margin: 0 auto;
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contact__avatar {
+    margin-bottom: 32px;
+}
+
+.contact__txt {
+    margin-bottom: 32px;
+    font-size: 16px;
+    max-width: 415px;
+    width: 100%;
+    line-height: 20px;
+}
+
+.contact__title {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+@media (max-width: 1200px) {
+    .contact {
+        background: url('../images/contact-tablet.jpg') center/cover no-repeat;
+        height: 466px;
+        padding: 0 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact {
+        padding: 0 16px;
+    }
+
+    .contact {
+        background: url('../images/contact-us-mb.jpg') center/cover no-repeat;
+    }
+    .contact__container {
+        justify-content: center;
+    }
+
+    .contact__btn {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .contact__avatar {
+        display: block;
+        margin: 0 auto 32px; 
+    }
+
+    .contact__txt {
+        max-width: 285px;
+    }
+}
+
