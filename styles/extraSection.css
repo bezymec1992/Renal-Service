@@ -105,15 +105,7 @@
     background-color: #C5A085;
   }
 
-
-@media (max-width: 1200px) {
-    .extra {
-        padding-top: 0;
-        margin-top: 0;
-    }
-    .main__block2 {
-        border-top: none;
-    }
+  @media (max-width: 1540px) {
     .extra__items {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -122,6 +114,17 @@
     }
     .extra__item {
         max-width: 100%;
+    }
+  }
+
+
+@media (max-width: 1200px) {
+    .extra {
+        padding-top: 0;
+        margin-top: 0;
+    }
+    .main__block2 {
+        border-top: none;
     }
 
     .extra__toggle-wrapper {

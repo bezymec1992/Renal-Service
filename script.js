@@ -43,14 +43,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
   // Extra section. click on item add active class
+  // const items = document.querySelectorAll('.extra__item');
+
+  // items.forEach(item => {
+  //   item.addEventListener('click', () => {
+  //     items.forEach(i => i.classList.remove('extra__item-active'));
+  //     item.classList.add('extra__item-active');
+  //   });
+  // });
+
   const items = document.querySelectorAll('.extra__item');
 
-  items.forEach(item => {
-    item.addEventListener('click', () => {
-      items.forEach(i => i.classList.remove('extra__item-active'));
-      item.classList.add('extra__item-active');
-    });
+items.forEach(item => {
+  item.addEventListener('click', () => {
+    item.classList.toggle('extra__item-active');
   });
+});
 
   //Insurance section. click on card add active class
   const insuranceCards = document.querySelectorAll('.insurance__card');
